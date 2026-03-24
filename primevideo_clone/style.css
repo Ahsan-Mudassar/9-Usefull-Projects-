@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+body {
+
+    background-color: black;
+    position: relative;
+}
+
+nav {
+    background-color: #14181f;
+    position: sticky;
+    height: 55px;
+    width: 96%;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin-left: 25px;
+    margin-right: 26px;
+}
+
+.nav-bar {
+    position: relative;
+}
+
+.menu {
+    display: none;
+    /* width: 56vw;
+    height: 86vh;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    z-index: 10; */
+}
+
+.nav-bar .logo {
+    padding-right: 30px;
+}
+
+.nav-bar .main-nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-bar .main-nav li {
+    font-weight: 600;
+    font-family: "Poppins" sans-serif;
+    cursor: pointer;
+    padding: 6px 14px;
+    transition: all 0.3s ease;
+}
+
+.nav-bar .main-nav li:hover {
+    background-color: aliceblue;
+    color: #00050d;
+    border-radius: 5px;
+}
+
+.nav-bar .sub-nav {
+    position: absolute;
+    right: 0;
+    margin-right: 80px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-bar .sub-nav .search-icon input {
+    width: 130vh;
+    height: 50px;
+    display: none;
+    border-radius: 12px;
+    outline: 0;
+    font-size: 17px;
+    margin-top: 110px;
+    padding: 10px 10px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.108);
+    box-shadow: 0px 1px 9px 0px #a09e9e;
+}
+
+.nav-bar .sub-nav .search-icon svg {
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    height: 25px;
+    top: 2px;
+    right: -13px;
+    background-color: #090a0a;
+}
+
+.nav-bar .sub-nav .search-icon svg:hover {
+    color: #00050d;
+    background-color: aliceblue;
+}
+
+.nav-bar .sub-nav .lang-icon svg {
+    cursor: pointer;
+}
+
+.nav-bar .sub-nav .profile-icon svg {
+    cursor: pointer;
+}
+
+.nav-bar .sub-nav .lang-icon svg:hover {
+    color: #00050d;
+    background-color: aliceblue;
+}
+
+ul .login-btn input {
+    padding: 6px 10px;
+    margin-left: 720px;
+    border-radius: 8px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: #157bcf;
+    color: white;
+    transition: all 0.2s ease;
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+}
+
+ul .login-btn input:hover {
+    background-color: aliceblue;
+    color: #00050d;
+    transform: scale(0.8px);
+}
+
+.hero-section {
+    background: url("https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/MLP_ROW_Muti-title_Mag1._CB1564087979_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90%;
+
+}
+
+.main-section {
+    color: white;
+    width: 50%;
+    background-color: #00050d;
+    box-shadow: 20px -1px 20px 0px black;
+    padding: 55px 36px;
+}
+
+.hero-section h1 {
+    font-size: 52px;
+    margin-bottom: 30px;
+}
+
+.hero-section p {
+    margin: 39px 6px;
+    font-size: 18px;
+}
+
+.hero-section #para {
+    opacity: 0.7;
+}
+
+.hero-section p:last-child {
+    margin-top: 40px;
+
+}
+
+.hero-section button {
+    padding: 20px;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    width: 47vh;
+    margin: 10px 0;
+    outline: 0;
+    cursor: pointer;
+    border: 0;
+}
+
+.hero-section #btn2 {
+    width: 47vh;
+}
+
+.hero-section button:hover {
+    background-color: #ffffffa7;
+    color: white;
+    opacity: 0.7;
+}
+
+.img-section {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 70px;
+
+    color: white;
+    background-color: #00050d;
+}
+
+.img-section img {
+    height: 308px;
+    width: 320px;
+}
+
+.img-section h2 {
+    font-size: 30px;
+}
+
+.img-section p {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 21px;
+}
+
+.img-section .img1 {
+    margin: 44px 29px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+}
+
+.img-section .img2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    margin: 44px 29px;
+    width: 90%;
+}
+
+.img-section .img3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 44px 29px;
+    gap: 40px;
+    width: 90%;
+}
+
+.img-section .img2 p {
+    margin-top: -16px;
+}
+
+.img-section .img3 p {
+    width: 89%;
+}
+
+footer {
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+footer img {
+    height: 48px;
+    width: 146px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #79b8f3;
+}
+
+footer p {
+    color: #8197a4;
+}
+
+@media(max-width:756px) {
+    nav {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .hero-section {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .nav-bar .main-nav {
+        list-style: none;
+        width: 59%;
+        cursor: pointer;
+        height: 61vh;
+        font-size: 19px;
+        font-weight: 200;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 442px;
+        margin-left: -312px;
+        z-index: 10;
+        background-color: #14181f;
+        display: none;
+    }
+
+    .nav-bar .main-nav li {
+        padding-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-bar .main-nav ul li:hover {
+        background-color: #343e44;
+    }
+
+    .nav-bar .sub-nav {
+        margin-right: 0px;
+        padding: 0 10px;
+    }
+
+    .nav-bar .main-nav .login-btn input {
+        margin-left: 83px;
+        margin-top: 179px;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-bar .sub-nav .search-icon input {
+        margin-right: -67px;
+        width: 70vh;
+    }
+
+    .nav-bar .logo {
+        margin-left: 138px;
+    }
+
+    body {
+        background: url("https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/MLP_ROW_Muti-title_Mag1._SX1440_CR575,0,865,675_QL80_AC_FP_.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        height: 20vh;
+        width: 100%;
+    }
+
+    .main-section {
+        text-align: end;
+        background-color: rgb(0, 0, 0);
+        box-shadow: none;
+        margin-top: 190px;
+        ;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-section h1 {
+        width: 109%;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .img-section {
+        display: block;
+        margin-top: 781px;
+        width: 100%;
+        margin-bottom: -44px;
+    }
+
+    footer {
+        gap: 20px;
+    }
+}
