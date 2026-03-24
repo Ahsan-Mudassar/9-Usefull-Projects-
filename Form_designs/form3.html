@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form3.css">
+</head>
+
+<body>
+    <button class="dark" id="icon">
+        🌙
+       
+    </button>
+
+    <div class="container">
+        <form action="">
+            <div class="wrapper">
+                <p>Please enter your detials</p>
+                <h2>Welcome Back</h2>
+            </div>
+            <div class="input-email">
+                <input type="email" required placeholder=" ">
+                <label for="">Email address</label>
+                <input type="password" required placeholder=" ">
+                <label id="lock" for="">Password</label>
+                <div class="eye-logo">
+
+                </div>
+            </div>
+            <div class="ckeckbox-anchor">
+                <input type="checkbox">
+                <label for="Remember me">Remember me</label>
+                <a href="#">Forget password?</a>
+            </div>
+            <div class="btn">
+                <input type="button" value="Sign in">
+
+            </div>
+            <div class="line">
+                _________________or_________________
+            </div>
+            <div class="social-logo">
+                <img src="google-logo-search-new-svgrepo-com.svg" alt="">
+                <img src="facebook-3-logo-svgrepo-com.svg" alt="">
+                <img src="apple-logo-svgrepo-com.svg" alt="">
+
+            </div>
+            <span class="text">
+                <p>Don't have an account?</p>
+                <a href="# ">Sign up</a>
+            </span>
+
+        </form>
+        <!-- <div class="input-container">
+            <input type="text" id="name" required placeholder=" ">
+            <label for="name">Name</label>
+        </div> -->
+    </div>
+    <script>
+        const btn = document.getElementById("icon");
+
+        btn.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+
+            if (document.body.classList.contains("dark")) {
+                btn.textContent = "☀️";
+            } else {
+                btn.textContent = "🌙";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

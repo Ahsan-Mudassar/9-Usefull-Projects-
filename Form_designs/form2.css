@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url("https://img.freepik.com/premium-photo/misty-forest-with-dense-trees-covered-fog-creating-eerie-atmosphere-dreamy-purple-gradient-fading-into-darkness_538213-71189.jpg?semt=ais_hybrid&w=740&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    border-radius: 38px;
+    background-color: blueviolet;
+    color: white;
+}
+
+div h1 {
+    font-size: 38px;
+    text-align: center;
+}
+
+.container .input_1 {
+     width: 93%;
+    height: 50%;
+    color: blue;
+    margin: 20px 0px 15px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.input_1 input {
+    width: 84%;
+    border-radius: 40px;
+    padding: 10px 0px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+.input_1 input::placeholder {
+    color: #fff;
+    padding-left: 12px;
+}
+
+.input_1 i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transform: translateY(13%);
+    font-size: 20px;
+    color: #fff;
+}
+
+.checkbox {
+    margin-top: 44px;
+}
+
+.checkbox input {
+    margin-left: 11px;
+}
+
+.checkbox a {
+    margin-left: 135px;
+}
+
+.btn1 {
+    margin-top: 36px;
+    margin-left: 62px;
+    padding: 10px 119px 16px 115px;
+    border-radius: 18px;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    border: none;
+
+}
+
+.footer {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #fff;
+}

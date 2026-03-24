@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(128, 128, 128, 0.951);
+}
+
+.stopwatch .timedisplay {
+    font-size: 52px;
+    border-radius: 12px;
+    height: 60px;
+    width: 290px;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons .btn {
+    font-family: sans-serif;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 12px 25px;
+}
+
+.buttons .btn1 {
+    background-color: rgb(235, 13, 13);
+    color: white;
+}
+
+.buttons .btn2 {
+    background-color: rgb(32, 51, 146);
+    color: white;
+}
+
+.buttons .btn3 {
+    background-color: aqua;
+    color: white;
+}

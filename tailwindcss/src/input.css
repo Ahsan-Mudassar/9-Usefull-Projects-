@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.text_color {
+    color: #616161;
+}
+a:hover{
+    text-decoration: underline;
+}
+button{
+    color: white;
+    padding: 4px 5px 4px 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #3382f8;
+}
+button:hover{
+    background-color: #1671fb;
+}

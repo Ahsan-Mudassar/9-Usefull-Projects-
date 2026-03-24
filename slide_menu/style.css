@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(130, 117, 243);
+    height: 7vh;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 12px;
+}
+
+.logo {
+    margin-left: 26px;
+}
+
+nav ul li {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+nav ul li:hover {
+    background-color: aqua;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+nav ul li.active {
+    display: block;
+}
+
+nav button {
+    padding: 4px 13px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-right: 26px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    transition: all .4s ease;
+}
+
+nav button:hover {
+    color: white;
+    background-color: aqua;
+}
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #menu-icon {
+        display: block;
+    }
+
+    nav button {
+        width: 80px;
+        box-sizing: content-box;
+    }
+
+    #main-nav {
+        width: 100%;
+        display: none;
+        top: 50px;
+        left: 0;
+        position: absolute;
+        text-align: center;
+    }
+
+    #main-nav.active {
+        display: block;
+    }
+
+}

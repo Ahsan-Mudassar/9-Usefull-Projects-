@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slide-menubar</title>
+</head>
+
+<body>
+    <nav>
+        <div id="menu-icon" >
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </div>
+        <div class="logo">XGradient</div>
+        <ul id="main-nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+            <li>features</li>
+        </ul>
+        <button id="sign-button">Sign in</button>
+    </nav>
+    <script>
+        let micon = document.getElementById("menu-icon");
+        let mnav = document.getElementById("main-nav");
+        // micon.addEventListener("toggle", () => {
+        //     if (mnav.style.display = "none") {
+        //         mnav.style.display = "block";
+        //     } else  {
+        //         mnav.style.display = "none";
+        //     }
+        // })
+        micon.addEventListener("click", () => {
+          mnav.classList.toggle("active")
+        })
+        
+        // function toggleMenu() {
+        //     document.getElementById("main-nav").classList.toggle("active");
+        // }
+    </script>
+</body>
+
+</html>
